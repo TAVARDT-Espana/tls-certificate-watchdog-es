@@ -1,9 +1,9 @@
-# Monitor de Certificados TLS/SSL | TAVARDT España
+# Watchdog de Certificados TLS/SSL | TAVARDT España
 
 [![Alcance de la Verificación Perimetral](https://img.shields.io/badge/TAVARDT-Diagn%C3%B3stico%20T%C3%A9cnico-5b3cf5.svg)](https://tools.tavardt.com/es/analisis-cabeceras-seguridad/)
 [![Jurisdicci%C3%B3n](https://img.shields.io/badge/Jurisdicci%C3%B3n-España-00C853.svg)](https://ag.tavardt.com/es/ciberseguridad/)
 
-Monitorización automatizada de expiración de certificados SSL/TLS y verificación criptográfica alineada con el Esquema Nacional de Seguridad (ENS) en España.
+Monitorización automatizada de caducidad de certificados SSL/TLS, integridad de cadena criptográfica y cumplimiento técnico en España.
 
 Desarrollado y mantenido por el área de ciberseguridad y protección de infraestructuras de **[TAVARDT España](https://ag.tavardt.com/es/)**.
 
@@ -11,12 +11,12 @@ Desarrollado y mantenido por el área de ciberseguridad y protección de infraes
 
 ## 1. Alcance de la Verificación Perimetral
 
-Esta utilidad de consola comprueba en tiempo real la vigencia y robustez de certificados y suites de cifrado:
+Esta utilidad de consola evalúa la vigencia, protocolos y robustez criptográfica de los certificados SSL/TLS:
 
-* **Alerta Preventiva de Caducidad:** Calcula los días restantes de vigencia de los certificados con umbrales configurables.
-* **Auditoría de Suites de Cifrado:** Verifica el uso prioritario de TLS 1.3 y bloqueo de protocolos inseguros.
-* **Comprobación de Autoridad Emisora:** Audita la cadena de certificación y los nombres alternativos del sujeto (SAN).
-* **Ejecución Sin Dependencias:** Construido sobre módulos nativos de Python para integración inmediata en CI/CD y cron.
+* **Alerta Preventivo de Caducidad:** Calcula los días restantes de validez del certificado con alertas configurables.
+* **Auditoría de Cifrados y Protocolos:** Verifica el soporte de TLS 1.3 y garantiza la revocación de versiones obsoletas.
+* **Validación de Autoridad Emisora (CA):** Comprueba la entidad certificadora de la cadena de confianza y los nombres SAN.
+* **Cero Dependencias Externas:** Desarrollado únicamente con las librerías nativas ssl y socket de Python.
 
 ---
 
@@ -25,7 +25,7 @@ Esta utilidad de consola comprueba en tiempo real la vigencia y robustez de cert
 Ejecute la herramienta directamente mediante Python sin necesidad de instalar librerías externas:
 
 ```bash
-python watchdog.py example.com
+python watchdog.py ejemplo.es
 ```
 
 ---
@@ -44,4 +44,4 @@ Compruebe el estado de seguridad de sus aplicaciones públicas con las herramien
 
 ## 4. Consultoría y Blindaje Técnico
 
-Para proyectos de adecuación ENS, blindaje de servidores y respuesta a incidentes en España, contacte con **[TAVARDT España](https://ag.tavardt.com/es/contacto/)**.
+Para hardening de servidores, renovación automatizada y auditorías criptográficas en España, contacte con **[TAVARDT España](https://ag.tavardt.com/es/contacto/)**.
