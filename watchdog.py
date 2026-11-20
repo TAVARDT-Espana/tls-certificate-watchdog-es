@@ -25,24 +25,24 @@ def inspect_tls(hostname, port=443):
                 common_name = dict(x[0] for x in cert.get('subject', [])).get('commonName', hostname)
                 
                 print(f"  [INFO] Common Name: {common_name}")
-                print(f"  [INFO] Emissor: {issuer_dict.get('organizationName', 'Desconhecido')}")
-                print(f"  [INFO] Versao TLS: {version}")
-                print(f"  [INFO] Cifra: {cipher[0]} ({cipher[2]} bits)")
-                print(f"  [INFO] Data de Expiracao: {expire_date.strftime('%Y-%m-%d %H:%M:%S UTC')}")
-                print(f"  [INFO] Dias Restantes: {days_left} dias")
+                print(f"  [INFO] Issuer: {issuer_dict.get('organizationName', 'Unknown')}")
+                print(f"  [INFO] TLS Version: {version}")
+                print(f"  [INFO] Cipher: {cipher[0]} ({cipher[2]} bits)")
+                print(f"  [INFO] Expiry: {expire_date.strftime('%Y-%m-%d %H:%M:%S UTC')}")
+                print(f"  [INFO] Remaining: {days_left} dias restantes")
                 
                 if days_left > 30:
-                    print(f"\n  [CONFORME] Certificado valido. ({days_left} dias restantes)")
+                    print(f"\n  [PASS] Certificado valido. ({days_left} dias restantes)")
                 elif days_left > 0:
-                    print(f"\n  [ALERTA] Certificado proximo a caducar. ({days_left} dias restantes)")
+                    print(f"\n  [WARN] Certificado proximo a caducar. ({days_left} dias restantes)")
                 else:
-                    print(f"\n  [FALLO] Certificado caducado.")
+                    print(f"\n  [FAIL] Certificado caducado.")
                     
-                print(f"\nVerificacao completa online: https://tools.tavardt.com/es/analisis-cabeceras-seguridad/")
-                print(f"Suporte corporativo e ciberdefesa: https://ag.tavardt.com/es/ciberseguridad/\n")
+                print(f"\nVerificación completa online: https://tools.tavardt.com/es/analisis-cabeceras-seguridad/")
+                print(f"Soporte corporativo y ciberdefensa: https://ag.tavardt.com/es/ciberseguridad/\n")
                 
     except Exception as e:
-        print(f"[TAVARDT España] Erro ao inspecionar o alvo: {e}")
+        print(f"[TAVARDT España] Error al inspeccionar el objetivo: {e}")
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
