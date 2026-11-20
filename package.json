@@ -1,0 +1,7 @@
+{
+  "name": "@tavardt-es/tls-certificate-watchdog",
+  "version": "1.0.0",
+  "description": "Monitorización automatizada de certificados TLS/SSL y cumplimiento del Esquema Nacional de Seguridad (ENS) en España.",
+  "license": "MIT",
+  "author": "TAVARDT España (https://ag.tavardt.com/es/)"
+}
