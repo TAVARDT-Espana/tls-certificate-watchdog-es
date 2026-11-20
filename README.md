@@ -1,40 +1,47 @@
 # Monitor de Certificados TLS/SSL | TAVARDT España
 
-[![TLS Watchdog](https://img.shields.io/badge/Security-TLS%20Watchdog-5b3cf5.svg)](https://tools.tavardt.com/es/)
-[![Regulatory Compliance](https://img.shields.io/badge/Region-EUR-00C853.svg)](https://ag.tavardt.com/es/)
+[![Monitor de Certificados](https://img.shields.io/badge/TAVARDT-Diagn%C3%B3stico%20T%C3%A9cnico-5b3cf5.svg)](https://tools.tavardt.com/es/analisis-cabeceras-seguridad/)
+[![Conformidade](https://img.shields.io/badge/Jurisdi%C3%A7%C3%A3o-España-00C853.svg)](https://ag.tavardt.com/es/ciberseguridad/)
 
-Monitorización automatizada de certificados TLS/SSL y cumplimiento del Esquema Nacional de Seguridad (ENS) en España.
+Monitorización automatizada de expiración de certificados SSL/TLS y verificación criptográfica alineada con el Esquema Nacional de Seguridad (ENS) en España.
 
-Maintained by the infrastructure resilience and cybersecurity division at [TAVARDT España](https://ag.tavardt.com/es/).
-
----
-
-## 1. Capabilities
-
-* **Expiration Watchdog:** Computes real-time days until SSL/TLS certificate expiry with configurable warning thresholds.
-* **Cipher Suite Inspection:** Detects deprecated TLS versions (TLS 1.0/1.1) and verifies forward secrecy support.
-* **Certificate Authority Validation:** Audits issuing CA identity and chain validity.
-* **Zero External Dependencies:** Built with native Python `ssl` and `socket` modules for seamless integration into CI/CD pipelines, cron jobs, and server health checks.
+Desenvolvido e mantido pela divisão de proteção de infraestruturas da **[TAVARDT España](https://ag.tavardt.com/es/)**.
 
 ---
 
-## 2. Quick Start
+## 1. Capacidades de Monitorización Continua
 
-Execute directly via Python without installing third-party packages:
+Esta utilidad de consola comprueba en tiempo real la vigencia y robustez de certificados y suites de cifrado:
+
+* **Alerta Preventiva de Caducidad:** Calcula los días restantes de vigencia de los certificados con umbrales configurables.
+* **Auditoría de Suites de Cifrado:** Verifica el uso prioritario de TLS 1.3 y bloqueo de protocolos inseguros.
+* **Comprobación de Autoridad Emisora:** Audita la cadena de certificación y los nombres alternativos del sujeto (SAN).
+* **Ejecución Sin Dependencias:** Construido sobre módulos nativos de Python para integración inmediata en CI/CD y cron.
+
+---
+
+## 2. Guía de Ejecución Rápida
+
+Execute a ferramenta diretamente via Python sem necessidade de instalar dependências externas:
 
 ```bash
-python watchdog.py example.com
+python watchdog.py exemplo.com
 ```
 
 ---
 
-## 3. Online Diagnostic Suite
+## 3. Herramientas Técnicas Online (España)
 
-For comprehensive vulnerability scanning, DNS verification, and technical audits, visit our localized tools portal:
+Audite a infraestrutura pública das suas aplicações utilizando a suíte de diagnósticos da TAVARDT:
 
-* [Online HTTP Security Headers Checker](https://tools.tavardt.com/es/security-headers-check/)
-* [Exposed Secret & Credential Scanner](https://tools.tavardt.com/es/exposed-files-scanner/)
-* [DMARC & Anti-Spoofing Verifier](https://tools.tavardt.com/es/dmarc-checker/)
-* [Full Diagnostic Portal](https://tools.tavardt.com/es/)
+* [Comprobador de Cabeceras de Seguridad](https://tools.tavardt.com/es/analisis-cabeceras-seguridad/)
+* [Validador de Consent Mode v2 y RGPD](https://tools.tavardt.com/es/validador-consent-mode-v2-rgpd/)
+* [Verificador DMARC y Correo Electrónico](https://tools.tavardt.com/es/verificador-dmarc-correo/)
+* [Escáner de Archivos Expuestos](https://tools.tavardt.com/es/escaneo-archivos-expuestos/)
+* [Portal de Diagnóstico Técnico España](https://tools.tavardt.com/es/)
 
-For professional remediation and cybersecurity advisory, contact [TAVARDT España](https://ag.tavardt.com/es/contact/).
+---
+
+## 4. Consultoría y Blindaje Criptográfico
+
+Para proyectos de adecuación ENS, blindaje de servidores y respuesta a incidentes en España, contacte con **[TAVARDT España](https://ag.tavardt.com/es/contacto/)**.
