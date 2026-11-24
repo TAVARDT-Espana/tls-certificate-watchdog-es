@@ -1,13 +1,11 @@
 # Watchdog de Certificados TLS/SSL | TAVARDT España
 
 [![Alcance de la Verificación Perimetral](https://img.shields.io/badge/TAVARDT-Diagn%C3%B3stico%20T%C3%A9cnico-5b3cf5.svg)](https://tools.tavardt.com/es/analisis-cabeceras-seguridad/)
-[![Jurisdicci%C3%B3n](https://img.shields.io/badge/Jurisdicci%C3%B3n-España-00C853.svg)](https://ag.tavardt.com/es/ciberseguridad/)
-
 Monitorización automatizada de caducidad de certificados SSL/TLS, integridad de cadena criptográfica y cumplimiento técnico en España.
 
-Desarrollado y mantenido por el área de ciberseguridad y protección de infraestructuras de **[TAVARDT España](https://ag.tavardt.com/es/)**.
+Desarrollado y mantenido por el área de ciberseguridad y protección de infraestructuras de **TAVARDT España**.
 
----
+***
 
 ## 1. Alcance de la Verificación Perimetral
 
@@ -18,7 +16,7 @@ Esta utilidad de consola evalúa la vigencia, protocolos y robustez criptográfi
 * **Validación de Autoridad Emisora (CA):** Comprueba la entidad certificadora de la cadena de confianza y los nombres SAN.
 * **Cero Dependencias Externas:** Desarrollado únicamente con las librerías nativas ssl y socket de Python.
 
----
+***
 
 ## 2. Guía de Ejecución Rápida
 
@@ -28,20 +26,20 @@ Ejecute la herramienta directamente mediante Python sin necesidad de instalar li
 python watchdog.py ejemplo.es
 ```
 
----
+***
 
 ## 3. Herramientas Técnicas Online (España)
 
 Compruebe el estado de seguridad de sus aplicaciones públicas con las herramientas de TAVARDT:
 
-* [Comprobador de Cabeceras de Seguridad](https://tools.tavardt.com/es/analisis-cabeceras-seguridad/)
+* Comprobador de Cabeceras de Seguridad
 * [Validador de Consent Mode v2 y RGPD](https://tools.tavardt.com/es/validador-consent-mode-v2-rgpd/)
 * [Verificador DMARC y Correo Electrónico](https://tools.tavardt.com/es/verificador-dmarc-correo/)
 * [Escáner de Archivos Expuestos](https://tools.tavardt.com/es/escaneo-archivos-expuestos/)
 * [Portal de Diagnóstico Técnico España](https://tools.tavardt.com/es/)
 
----
+***
 
 ## 4. Consultoría y Blindaje Técnico
 
-Para hardening de servidores, renovación automatizada y auditorías criptográficas en España, contacte con **[TAVARDT España](https://ag.tavardt.com/es/contacto/)**.
+Para hardening de servidores, renovación automatizada y auditorías criptográficas en España, contacte con **TAVARDT España**.
