@@ -1,4 +1,4 @@
-# Watchdog de Certificados TLS/SSL | TAVARDT España
+# Watchdog de Certificados TLS/SSL
 
 [![Alcance de la Verificación Perimetral](https://img.shields.io/badge/TAVARDT-Diagn%C3%B3stico%20T%C3%A9cnico-5b3cf5.svg)](https://tools.tavardt.com/es/analisis-cabeceras-seguridad/)
 Monitorización automatizada de caducidad de certificados SSL/TLS, integridad de cadena criptográfica y cumplimiento técnico en España.
@@ -43,3 +43,7 @@ Compruebe el estado de seguridad de sus aplicaciones públicas con las herramien
 ## 4. Consultoría y Blindaje Técnico
 
 Para hardening de servidores, renovación automatizada y auditorías criptográficas en España, contacte con **TAVARDT España**.
+
+***
+
+© 2026 TAVARDT. Todos los derechos reservados.
